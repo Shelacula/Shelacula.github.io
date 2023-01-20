@@ -54,3 +54,7 @@ box-sizing: border-box;
     left: 0;
     display: none;
 }
+
+#longskirt, #shortskirt {
+    z-index: 2;
+}
