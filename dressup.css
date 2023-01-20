@@ -51,7 +51,7 @@ box-sizing: border-box;
     width: auto;
 }
 
-.bottom, .top, .hat, .sock, .shoe, .neck, .ear, .expression {
+.bottom, .top, .hat, .sock, .shoe, .neck, .ear, .expression, .makeup, .nails {
     position: absolute;
     top: 0;
     left: 0;
