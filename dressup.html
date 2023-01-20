@@ -12,14 +12,46 @@
                 <div class="base">
                     <img src="https://i.imgur.com/7txrCMs.png">
                     <div class="clothes">
-                        <img src="https://i.imgur.com/zUDKFG3.png" class="bottom">
+                        <img src="https://i.imgur.com/zUDKFG3.png" class="bottom shorts">
+                        <img src="https://i.imgur.com/4ykKQIw.png" class="bottom thong">
+                        <img src="https://i.imgur.com/Gr0ILmq.png" class="bottom longskirt">
+                        <img src="https://i.imgur.com/rZ3EO6X.png" class="bottom shortskirt">
+                        <img src="https://i.imgur.com/EyE86rm.png" class="bottom leggings">
+                        <img src="https://i.imgur.com/2aVQ1FS.png" class="bottom pants">
                     </div>
+                </div>
+                
+                <div id="selectors">
+                    <ul>
+                        <li><img src="https://i.imgur.com/zUDKFG3.png" class="button" onclick="selectClothes(event, 'bottom', 'shorts')"></li>
+                        <li><img src="https://i.imgur.com/4ykKQIw.png" class="button" onclick="selectClothes(event, 'bottom', 'thong')"></li>
+                        <li><img src="https://i.imgur.com/Gr0ILmq.png" class="button" onclick="selectClothes(event, 'bottom', 'longskirt')"></li>
+                        <li><img src="https://i.imgur.com/rZ3EO6X.png" class="button" onclick="selectClothes(event, 'bottom', 'shortskirt')"></li>
+                        <li><img src="https://i.imgur.com/EyE86rm.png" class="button" onclick="selectClothes(event, 'bottom', 'leggings')"></li>
+                        <li><img src="https://i.imgur.com/2aVQ1FS.png" class="button" onclick="selectClothes(event, 'bottom', 'pants')"></li>
+                    </ul>
                 </div>
                 
             </div>
         
         </div>
 
+        <script>
+            function selectClothes(evt, itemType, itemName) {
+  let items = document.getElementsByClassName(itemType);
+  for (let i = 0; i < items.length; i++) {
+    content[i].style.display = "none";
+  }
+  let button = document.getElementsByClassName("button");
+  for (i = 0; i < button.length; i++) {
+    button[i].className = button[i].className.replace(" active", "");
+  }
+  document.getElementById(itemName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+        </script>
+        
+        
         
     </body>
 
