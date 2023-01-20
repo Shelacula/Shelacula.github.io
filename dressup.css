@@ -28,3 +28,18 @@ box-sizing: border-box;
     left: 0;
     top: 0;
 }
+
+#selectors ul {
+    list-style: none;
+    display: flex;
+}
+
+#selectors ul li {
+    height: 150px;
+    width: 150px;
+}
+
+#selectors ul li img {
+    height: 100%;
+    width: auto;
+}
