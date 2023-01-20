@@ -66,11 +66,11 @@ box-sizing: border-box;
     z-index: 1;
 }
 
-.top {
+.top, .sock {
     z-index: 2;
 }
 
-#t4, #t5, #t6 {
+#t4, #t5, #t6, .shoe {
     z-index: 3;
 }
 
