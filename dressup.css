@@ -8,8 +8,8 @@ box-sizing: border-box;
     background: white;
     display: flex;
     border-radius: 10px;
-    padding: 20px;
-    margin-left: auto;
+    padding: 40px;
+    justify-content: space-between;
 }
 
 #wrapper {
@@ -79,7 +79,6 @@ box-sizing: border-box;
 }
 
 #selectors {
-    margin-left: auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
