@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 #frame {
     background: white;
+    display: flex;
     border-radius: 10px;
     padding: 20px;
 }
@@ -16,4 +17,14 @@ box-sizing: border-box;
     background: skyblue;
     border-radius: 10px;
     padding: 60px;
+}
+
+.base {
+    position: relative;
+}
+
+.clothes {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
