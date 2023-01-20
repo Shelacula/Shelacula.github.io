@@ -30,10 +30,6 @@ box-sizing: border-box;
     top: 0;
 }
 
-#selectors {
-    margin-left: auto;
-}
-
 #selectors ul {
     list-style: none;
     display: flex;
@@ -61,4 +57,8 @@ box-sizing: border-box;
 
 #longskirt, #shortskirt {
     z-index: 2;
+}
+
+#selectors {
+    margin-left: auto;
 }
