@@ -82,6 +82,7 @@ box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-left: 40px;
 }
 
 .active {
