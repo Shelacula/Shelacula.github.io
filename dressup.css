@@ -74,6 +74,14 @@ box-sizing: border-box;
     z-index: 3;
 }
 
+#t6 {
+    z-index: 5;
+}
+
+.neck {
+    z-index: 6;
+}
+
 #selectors {
     margin-left: auto;
     display: flex;
