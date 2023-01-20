@@ -32,11 +32,14 @@ box-sizing: border-box;
 #selectors ul {
     list-style: none;
     display: flex;
+    gap: 10px;
 }
 
 #selectors ul li {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 #selectors ul li img {
