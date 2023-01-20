@@ -48,7 +48,7 @@ box-sizing: border-box;
     width: auto;
 }
 
-.bottom, .top {
+.bottom, .top, .hat {
     position: absolute;
     top: 0;
     left: 0;
