@@ -83,3 +83,7 @@ box-sizing: border-box;
     flex-direction: column;
     gap: 30px;
 }
+
+.active {
+    border: 5px solid black !important;
+}
