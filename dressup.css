@@ -30,6 +30,10 @@ box-sizing: border-box;
     top: 0;
 }
 
+#selectors {
+    margin-left: auto;
+}
+
 #selectors ul {
     list-style: none;
     display: flex;
