@@ -51,7 +51,7 @@ box-sizing: border-box;
     width: auto;
 }
 
-.bottom, .top, .hat, .sock, .shoe, .neck {
+.bottom, .top, .hat, .sock, .shoe, .neck, .ear {
     position: absolute;
     top: 0;
     left: 0;
@@ -70,12 +70,8 @@ box-sizing: border-box;
     z-index: 2;
 }
 
-#t4, #t5 {
+#t4, #t5, #t6 {
     z-index: 3;
-}
-
-#t6 {
-    z-index: 5;
 }
 
 .neck {
