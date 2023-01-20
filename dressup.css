@@ -51,7 +51,7 @@ box-sizing: border-box;
     width: auto;
 }
 
-.bottom, .top, .hat, .sock, .shoe {
+.bottom, .top, .hat, .sock, .shoe, .neck {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,7 +59,19 @@ box-sizing: border-box;
 }
 
 #longskirt, #shortskirt {
+    z-index: 4;
+}
+
+.bottom {
+    z-index: 1;
+}
+
+.top {
     z-index: 2;
+}
+
+#t4, #t5 {
+    z-index: 3;
 }
 
 #selectors {
