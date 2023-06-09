@@ -31,14 +31,18 @@
 	
 	
 	<script>
-		function randomPercent(min, max) {
+function randomPercent(min, max) {
 	return parseFloat((Math.random() * (max-min) + min).toFixed(2));
 }
 
 let goldBool = document.getElementById("gold-check").checked;
-let whiteBool = document.getElementById("white-check").checked;;
-let mutationBool = document.getElementById("mutation-check").checked;;
+let whiteBool = document.getElementById("white-check").checked;
+let mutationBool = document.getElementById("mutation-check").checked;
 let clutchNum = Math.floor(Math.random() * (20-10) + 10);
+
+if(parseInt(document.getElementByID("egg-count").value) !== null){
+	clutchNum = parseInt(document.getElementByID("egg-count").value);
+}
 
 let bronze = Math.round(clutchNum * randomPercent(.02, .1));
 let brown = Math.round(clutchNum * randomPercent(.1, .2));
