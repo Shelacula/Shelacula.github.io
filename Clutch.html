@@ -24,9 +24,9 @@
 			<div id="label">Mutations? <input id="mutation-check" type="checkbox"></div>
 		</div>
 		
-		<div id="num-check">How many eggs? <input id="egg-count" type="text"></div>
+		<div id="num-check">How many eggs? <input id="egg-count" type="text"><div class="button" id="submit-egg" onClick="clutchGenerator(clutchNum)">Clutch!</div></div>
 		</div>
-		<div id="egg-random" onClick="clutchGenerator(Math.floor(Math.random() * (20-10) + 10))">Random clutch!</div>
+		<div class="button" id="egg-random" onClick="clutchGenerator(Math.floor(Math.random() * (20-10) + 10))">Random clutch!</div>
 	    </div>
 	
 	
@@ -35,7 +35,7 @@ function randomPercent(min, max) {
 	return parseFloat((Math.random() * (max-min) + min).toFixed(2));
 }
 
-let clutchNum;
+let clutchNum = parseInt(document.getElementById("egg-count").value);
 
 function clutchGenerator(numEggs){
 clutchNum = numEggs;
