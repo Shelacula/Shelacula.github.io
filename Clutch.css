@@ -34,6 +34,6 @@ li {
   flex-direction: column;
 }
 
-#num-check {
+#num-check, #color-checks {
   display: flex;
 }
