@@ -9,7 +9,7 @@ body {
   background: linear-gradient(270deg, rgba(202,247,247,1) 0%, rgba(218,245,219,1) 49%, rgba(255,202,232,1) 100%);
 }
 
-#clutch-wrapper {
+#clutch_wrapper {
   margin: auto;
   background: rgba(225, 216, 216, 0.2);
   border-radius: 10px;
