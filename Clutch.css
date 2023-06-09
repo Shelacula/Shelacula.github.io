@@ -70,6 +70,7 @@ li {
   transition: background-color 0.5s ease;
   font-size: 1.3em;
   font-weight: bold;
+  user-select: none;
 }
 
 .button:hover {
