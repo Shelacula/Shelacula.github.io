@@ -56,7 +56,8 @@ let mutationBool = document.getElementById("mutation-check").checked;
 if (goldBool === true){
 	gold = 1
 } else if(random === true) {
-	gold = Math.round(clutchNum * randomPercent(0, .01))
+	gold = Math.round(clutchNum * randomPercent(0, .01));
+	console.log(gold);
 } else {
 	gold = 0;
 }
@@ -64,7 +65,8 @@ if (goldBool === true){
 if (whiteBool === true){
 	white = 1;
 } else if(random === true) {
-	white = Math.round(clutchNum * randomPercent(0, .01))
+	white = Math.round(clutchNum * randomPercent(0, .01));
+	console.log(white);
 } else {
 	white = 0;
 }
@@ -72,7 +74,8 @@ if (whiteBool === true){
 if (mutationBool === true){
 	mutant = 1;
 } else if(random === true) {
-	mutant = Math.round(clutchNum * randomPercent(0, .01))
+	mutant = Math.round(clutchNum * randomPercent(0, .01));
+	console.log(mutant);
 } else {
 	mutant = 0;
 }
