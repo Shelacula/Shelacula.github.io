@@ -30,6 +30,7 @@ li {
   display: flex;
   border-bottom: 1px solid black;
   padding: 10px;
+  gap: 20px;
 }
 
 .number {
