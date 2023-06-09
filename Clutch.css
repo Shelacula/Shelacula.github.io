@@ -37,3 +37,9 @@ li {
 #num-check, #color-checks {
   display: flex;
 }
+
+.button {
+  background: white;
+  border-radius: 4px;
+  padding: 5px;
+}
