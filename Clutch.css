@@ -21,7 +21,7 @@ li {
   display: flex;
 }
 
-#clutchwrapper {
+.clutchwrapper {
   margin: auto;
   background: rgb(255 255 255 / 43%);
   border-radius: 10px;
