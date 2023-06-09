@@ -40,6 +40,9 @@ let whiteBool = document.getElementById("white-check").checked;
 let mutationBool = document.getElementById("mutation-check").checked;
 let clutchNum;
 
+function clutchGenerator(numEggs){
+clutchNum = numEggs;
+	
 let bronze = Math.round(clutchNum * randomPercent(.02, .1));
 let brown = Math.round(clutchNum * randomPercent(.1, .2));
 let blue = Math.round(clutchNum * randomPercent(.2, .3));
@@ -67,9 +70,7 @@ if (mutationBool === true){
 }
 
 let green = clutchNum - (bronze + blue + brown + gold + white + mutant);
-
-function clutchGenerator(numEggs){
-	clutchNum = numEggs;
+	
 	document.getElementById('Green').innerHTML = green;
 	document.getElementById('Blue').innerHTML = blue;
 	document.getElementById('Brown').innerHTML = brown;
