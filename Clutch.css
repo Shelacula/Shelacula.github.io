@@ -9,12 +9,6 @@ body {
   background: linear-gradient(270deg, rgba(202,247,247,1) 0%, rgba(218,245,219,1) 49%, rgba(255,202,232,1) 100%);
 }
 
-#clutchwrapper {
-  margin: auto;
-  background: rgb(255 255 255 / 43%);
-  border-radius: 10px;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -27,3 +21,8 @@ li {
   display: flex;
 }
 
+#clutchwrapper {
+  margin: auto;
+  background: rgb(255 255 255 / 43%);
+  border-radius: 10px;
+}
