@@ -20,12 +20,12 @@
 		<li><span class="label">Total Eggs: </span><span class="number" id="Total">0</span></li>
 	</ul>
 		<div id="color-checks">Generate: 
-			<div id="label">Gold? <input id="gold-check" type="checkbox"></div> 
-			<div id="label"> White? <input id="white-check" type="checkbox"></div> 
-			<div id="label">New Mutation? <input id="mutation-check" type="checkbox"></div>
+			<div class="label">Gold? <input id="gold-check" type="checkbox"></div> 
+			<div class="label"> White? <input id="white-check" type="checkbox"></div> 
+			<div class="label">New Mutation? <input id="mutation-check" type="checkbox"></div>
 		</div>
 		
-		<div id="num-check">How many eggs? <input id="egg-count" type="text"><div class="button" id="submit-egg" onClick="clutchGenerator(parseInt(document.getElementById('egg-count').value))">Clutch!</div></div>
+		<div id="num-check"><span>How many eggs? </span><input id="egg-count" type="text"><div class="button" id="submit-egg" onClick="clutchGenerator(parseInt(document.getElementById('egg-count').value))">Clutch!</div></div>
 		
 		<div class="button" id="egg-random" onClick="clutchGenerator(Math.floor(Math.random() * (20-10) + 10))">Random clutch!</div>
 		</div>
