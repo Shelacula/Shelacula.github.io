@@ -25,9 +25,9 @@
 			<div class="label">New Mutation? <input id="mutation-check" type="checkbox"></div>
 		</div>
 		
-		<div id="num-check"><span>How many eggs? </span><input id="egg-count" type="text"><div class="button" id="submit-egg" onClick="clutchGenerator(parseInt(document.getElementById('egg-count').value))">Clutch!</div></div>
+		<div id="num-check"><span>How many eggs? </span><input id="egg-count" type="text"><div class="button" id="submit-egg" onClick="clutchGenerator(parseInt(document.getElementById('egg-count').value), false)">Clutch!</div></div>
 		
-		<div class="button" id="egg-random" onClick="clutchGenerator(Math.floor(Math.random() * (20-5) + 5))">Random clutch!</div>
+		<div class="button" id="egg-random" onClick="clutchGenerator(Math.floor(Math.random() * (20-5) + 5), true)">Random clutch!</div>
 		</div>
 		
 	
@@ -39,7 +39,7 @@ function randomPercent(min, max) {
 
 let clutchNum;
 
-function clutchGenerator(numEggs){
+function clutchGenerator(numEggs, random){
 clutchNum = numEggs;
 	
 let bronze = Math.round(clutchNum * randomPercent(.05, .15));
@@ -55,18 +55,24 @@ let mutationBool = document.getElementById("mutation-check").checked;
 
 if (goldBool === true){
 	gold = 1
+} else if(random === true) {
+	gold = Math.round(clutchNum * randomPercent(0, .01))
 } else {
 	gold = 0;
 }
 
 if (whiteBool === true){
 	white = 1;
+} else if(random === true) {
+	white = Math.round(clutchNum * randomPercent(0, .01))
 } else {
 	white = 0;
 }
 
 if (mutationBool === true){
 	mutant = 1;
+} else if(random === true) {
+	mutant = Math.round(clutchNum * randomPercent(0, .01))
 } else {
 	mutant = 0;
 }
