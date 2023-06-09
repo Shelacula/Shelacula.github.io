@@ -35,9 +35,6 @@ function randomPercent(min, max) {
 	return parseFloat((Math.random() * (max-min) + min).toFixed(2));
 }
 
-let goldBool = document.getElementById("gold-check").checked;
-let whiteBool = document.getElementById("white-check").checked;
-let mutationBool = document.getElementById("mutation-check").checked;
 let clutchNum;
 
 function clutchGenerator(numEggs){
@@ -49,7 +46,10 @@ let blue = Math.round(clutchNum * randomPercent(.2, .3));
 let gold = 0;
 let white = 0;
 let mutant = 0;
-	
+
+let goldBool = document.getElementById("gold-check").checked;
+let whiteBool = document.getElementById("white-check").checked;
+let mutationBool = document.getElementById("mutation-check").checked;
 
 if (goldBool === true){
 	gold = 1
