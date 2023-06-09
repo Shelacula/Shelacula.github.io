@@ -15,6 +15,8 @@
 		<li><span class="label">Brown: </span><span class="number" id="Brown"></span></li>
 		<li><span class="label">Blue: </span><span class="number" id="Blue"></span></li>
 		<li><span class="label">Green: </span><span class="number" id="Green"></span></li>
+		
+		<li><span class="label">Total Eggs: </span><span class="number" id="Total"></span></li>
 	</ul>
 		<div id="color-checks">Generate: 
 			<div id="label">Gold? <input id="gold-check" type="checkbox"></div> 
@@ -74,6 +76,7 @@ function clutchGenerator(numEggs){
 	document.getElementById('Mutation').innerHTML = mutant;
 	document.getElementById('Gold').innerHTML = gold;
 	document.getElementById('White').innerHTML = white;
+	document.getElementById('Total').innerHTML = clutchNum;
 }
 
 		
