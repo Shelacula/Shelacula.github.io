@@ -16,17 +16,69 @@
 		<li><span class="label">Blue: </span><span class="number" id="Blue"></span></li>
 		<li><span class="label">Green: </span><span class="number" id="Green"></span></li>
 	</ul>
-		<div id="color-checks">Allow for: 
+		<div id="color-checks">Generate: 
 			<div id="label">Gold? <input id="gold-check" type="checkbox"></div> 
 			<div id="label"> White? <input id="white-check" type="checkbox"></div> 
 			<div id="label">Mutations? <input id="mutation-check" type="checkbox"></div>
 		</div>
 		
-		<div id="num-check">How many eggs?
-			<div id="egg-num">This many:<input id="egg-count" type="text"></div>
-			<div id="egg-random">Randomize!</div>
+		<div id="num-check">How many eggs? <input id="egg-count" type="text"></div>
 		</div>
+		<div id="egg-random" onClick="clutchGenerator(clutchNum)">Random clutch!</div>
 	    </div>
+	
+	
+	<script>
+		function randomPercent(min, max) {
+	return parseFloat((Math.random() * (max-min) + min).toFixed(2));
+}
+
+let goldBool = document.getElementById("gold-check").checked;
+let whiteBool = document.getElementById("white-check").checked;;
+let mutationBool = document.getElementById("mutation-check").checked;;
+let clutchNum = Math.floor(Math.random() * (20-10) + 10);
+
+let bronze = Math.round(clutchNum * randomPercent(.02, .1));
+let brown = Math.round(clutchNum * randomPercent(.1, .2));
+let blue = Math.round(clutchNum * randomPercent(.2, .3));
+let gold = 0;
+let white = 0;
+let mutant = 0;
+	
+
+if (goldBool === true){
+	gold = 1
+} else {
+	gold = 0;
+}
+
+if (whiteBool === true){
+	white = 1;
+} else {
+	white = 0;
+}
+
+if (mutationBool === true){
+	mutant = 1;
+} else {
+	mutant = 0;
+}
+
+let green = clutchNum - (bronze + blue + brown + gold + white + mutant);
+
+function clutchGenerator(numEggs){
+	document.getElementById('Green').innerHTML = green;
+	document.getElementById('Blue').innerHTML = blue;
+	document.getElementById('Brown').innerHTML = brown;
+	document.getElementById('Bronze').innerHTML = bronze;
+	document.getElementById('Mutation').innerHTML = mutant;
+	document.getElementById('Gold').innerHTML = gold;
+	document.getElementById('White').innerHTML = white;
+}
+
+		
+	</script>
+	
 	
 	</body>
 </html>
