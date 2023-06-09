@@ -26,7 +26,7 @@
 		
 		<div id="num-check">How many eggs? <input id="egg-count" type="text"></div>
 		</div>
-		<div id="egg-random" onClick="clutchGenerator(clutchNum)">Random clutch!</div>
+		<div id="egg-random" onClick="clutchGenerator(Math.floor(Math.random() * (20-10) + 10))">Random clutch!</div>
 	    </div>
 	
 	
@@ -38,11 +38,7 @@ function randomPercent(min, max) {
 let goldBool = document.getElementById("gold-check").checked;
 let whiteBool = document.getElementById("white-check").checked;
 let mutationBool = document.getElementById("mutation-check").checked;
-let clutchNum = Math.floor(Math.random() * (20-10) + 10);
-
-if(parseInt(document.getElementByID("egg-count").value) !== null){
-	clutchNum = parseInt(document.getElementByID("egg-count").value);
-}
+let clutchNum;
 
 let bronze = Math.round(clutchNum * randomPercent(.02, .1));
 let brown = Math.round(clutchNum * randomPercent(.1, .2));
@@ -73,6 +69,7 @@ if (mutationBool === true){
 let green = clutchNum - (bronze + blue + brown + gold + white + mutant);
 
 function clutchGenerator(numEggs){
+	clutchNum = numEggs;
 	document.getElementById('Green').innerHTML = green;
 	document.getElementById('Blue').innerHTML = blue;
 	document.getElementById('Brown').innerHTML = brown;
