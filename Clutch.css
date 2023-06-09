@@ -68,10 +68,12 @@ li {
   width: 150px;
   cursor: pointer;
   transition: background-color 0.5s ease;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .button:hover {
-  background: gray;
+  background: #42f5bf;
 }
 
 #egg-random {
