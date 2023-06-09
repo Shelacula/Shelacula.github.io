@@ -49,6 +49,7 @@ li {
 
 #num-check, #color-checks {
   display: flex;
+  gap: 20px;
 }
 
 .button {
