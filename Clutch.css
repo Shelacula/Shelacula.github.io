@@ -65,7 +65,7 @@ li {
   padding: 5px;
   text-align: center;
   font-family: Georgia, serif;
-  width: 150px;
+  max-width: 200px;
   cursor: pointer;
   transition: background-color 0.5s ease;
   font-size: 1.3em;
@@ -74,7 +74,7 @@ li {
 }
 
 .button:hover {
-  background: #42f5bf;
+  background: rgba(255, 202, 232, 1);
 }
 
 #egg-random {
