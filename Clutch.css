@@ -26,6 +26,9 @@ li {
   background: rgb(255 255 255 / 43%);
   border-radius: 10px;
   width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 #num-check {
